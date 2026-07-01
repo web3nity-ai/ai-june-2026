@@ -1,0 +1,1421 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Июнь в AI 2026 — Web3nity</title>
+  <meta name="description" content="Главный вопрос месяца: как не остаться без доступа и не потерять свои наработки, если блокировки аккаунтов усиливаются, а самые мощные ИИ-модели начинают выдавать почти по паспорту. Fable 5 вернулся, но уже с у" />
+  <meta property="og:title" content="Июнь в AI 2026 — Web3nity" />
+  <meta property="og:description" content="Главный вопрос месяца: как не остаться без доступа и не потерять свои наработки, если блокировки аккаунтов усиливаются, а самые мощные ИИ-модели начинают выдавать почти по паспорту. Fable 5 вернулся, но уже с у" />
+  <meta property="og:image" content="assets/june-ai-briefing-card.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&family=JetBrains+Mono:wght@400..700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; scroll-padding-top: 78px; }
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(ellipse 82% 62% at 18% -12%, rgba(235, 107, 47, .075), transparent 62%),
+        radial-gradient(ellipse 60% 54% at 100% 28%, rgba(0, 127, 139, .055), transparent 64%),
+        linear-gradient(90deg, rgba(39,32,68,.035) 1px, transparent 1px) 0 0 / 30px 30px,
+        linear-gradient(0deg, rgba(39,32,68,.028) 1px, transparent 1px) 0 0 / 30px 30px,
+        #F6F4EA;
+      color: var(--ink);
+      font-family: var(--f-body);
+      font-size: 16px;
+      line-height: 1.6;
+      letter-spacing: 0;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+    img { display: block; max-width: 100%; }
+    button { font: inherit; }
+    a { color: inherit; text-decoration-color: var(--rule); text-underline-offset: 4px; }
+    a:hover { text-decoration-color: var(--rust); }
+
+    :root {
+      --bg: #F6F4EA;
+      --bg-card: #FDFCF7;
+      --bg-raised: #FFFFFF;
+      --ink: #272044;
+      --ink-soft: #3B3559;
+      --ink-muted: #6B6481;
+      --rule: #E4DFD0;
+      --rule-soft: #EFEBDD;
+      --rust: #EB6B2F;
+      --rust-dark: #B84B18;
+      --rust-soft: #FFF4EE;
+      --rust-tint: rgba(235, 107, 47, .09);
+      --ochre: #B88720;
+      --olive: #5A6B1F;
+      --plum: #7A2242;
+      --blue: #2457C5;
+      --cyan: #007F8B;
+      --green: #2C8B59;
+      --f-display: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+      --f-body: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+      --f-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+      --gutter: clamp(20px, 4vw, 64px);
+      --max: 1360px;
+      --radius: 14px;
+      --radius-sm: 10px;
+      --shadow-soft: 0 4px 24px rgba(39, 32, 68, .06);
+      --shadow-md: 0 12px 40px -12px rgba(39, 32, 68, .16);
+      --ease: cubic-bezier(.16, 1, .3, 1);
+    }
+
+    h1, h2, h3, h4 {
+      color: var(--ink);
+      font-family: var(--f-display);
+      font-weight: 850;
+      letter-spacing: 0;
+      line-height: 1.04;
+    }
+    p { color: var(--ink-soft); }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      border-bottom: 1px solid var(--rule);
+      background: color-mix(in srgb, var(--bg) 90%, transparent);
+      backdrop-filter: saturate(1.35) blur(9px);
+      -webkit-backdrop-filter: saturate(1.35) blur(9px);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 14px var(--gutter);
+    }
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--ink);
+      font-family: var(--f-display);
+      font-size: 16px;
+      font-weight: 800;
+      letter-spacing: 0;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .nav-brand em {
+      color: var(--ink-muted);
+      font-style: normal;
+      font-weight: 500;
+    }
+    .nav-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--rust);
+      box-shadow: 0 0 0 3px color-mix(in srgb, var(--rust) 20%, transparent);
+    }
+    .nav-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-family: var(--f-mono);
+      font-size: 11.5px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .nav-list a {
+      color: var(--ink-soft);
+      text-decoration: none;
+      transition: color .2s ease;
+    }
+    .nav-list a:hover,
+    .nav-list a.is-active { color: var(--rust); }
+    @media (max-width: 980px) { .nav-list { display: none; } }
+
+    .wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 var(--gutter);
+    }
+    .section {
+      position: relative;
+      z-index: 1;
+      padding: clamp(70px, 8vw, 124px) 0;
+    }
+    .eyebrow {
+      color: var(--ink-muted);
+      font-family: var(--f-mono);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    .section-head {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: clamp(22px, 4vw, 58px);
+      align-items: end;
+      margin-bottom: clamp(34px, 5vw, 68px);
+      border-top: 2px solid var(--ink);
+      padding-top: 22px;
+    }
+    .section-num {
+      color: var(--rust);
+      font-family: var(--f-display);
+      font-size: clamp(42px, 6vw, 76px);
+      font-weight: 900;
+      letter-spacing: 0;
+      line-height: .88;
+    }
+    .section-title {
+      font-size: clamp(31px, 4.5vw, 58px);
+      font-weight: 900;
+      line-height: 1.02;
+      text-transform: uppercase;
+    }
+    .section-title em { color: var(--rust); font-style: normal; }
+    .section-sub {
+      max-width: 82ch;
+      margin-top: 14px;
+      color: var(--ink-muted);
+      font-family: var(--f-mono);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .11em;
+      line-height: 1.55;
+      text-transform: uppercase;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(56px, 8vw, 114px) 0 clamp(50px, 6vw, 86px);
+    }
+    .hero-topline {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 26px;
+      margin-bottom: 38px;
+      flex-wrap: wrap;
+    }
+    .hero-grid {
+      display: block;
+      max-width: 1040px;
+    }
+    .hero h1 {
+      max-width: 920px;
+      margin: 10px 0 28px;
+      font-size: clamp(52px, 9.4vw, 142px);
+      font-weight: 950;
+      line-height: .9;
+      text-transform: uppercase;
+    }
+    .hero h1 em { color: var(--rust); font-style: normal; }
+    .hero-lede {
+      max-width: 78ch;
+      color: var(--ink-soft);
+      font-size: clamp(18px, 1.6vw, 22px);
+      line-height: 1.55;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      border: 1px solid var(--ink);
+      border-radius: 999px;
+      background: var(--ink);
+      color: #F6F4EA;
+      padding: 11px 18px;
+      font-family: var(--f-mono);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: transform .25s var(--ease), box-shadow .25s ease, background .25s ease;
+    }
+    .button:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+    .button.secondary {
+      background: var(--bg-card);
+      color: var(--ink);
+      border-color: var(--rule);
+    }
+    @media (max-width: 680px) {
+      .hero h1 { font-size: clamp(48px, 16vw, 82px); }
+    }
+
+    .jump-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: clamp(34px, 5vw, 60px);
+    }
+    .jump-card {
+      position: relative;
+      min-height: 178px;
+      padding: 20px 18px;
+      border: 1px solid var(--rule);
+      border-left: 3px solid var(--tone, var(--rust));
+      border-radius: var(--radius);
+      background: var(--bg-card);
+      box-shadow: var(--shadow-soft);
+      text-decoration: none;
+      transition: transform .3s var(--ease), box-shadow .3s ease, border-color .3s ease;
+    }
+    .jump-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: color-mix(in srgb, var(--tone, var(--rust)) 45%, var(--rule));
+    }
+    .jump-num {
+      color: var(--tone, var(--rust));
+      font-family: var(--f-display);
+      font-size: 34px;
+      font-weight: 900;
+      line-height: 1;
+    }
+    .jump-title {
+      margin-top: 18px;
+      color: var(--ink);
+      font-size: 15px;
+      font-weight: 800;
+      line-height: 1.25;
+    }
+    .jump-desc {
+      margin-top: 10px;
+      color: var(--ink-soft);
+      font-size: 13px;
+      line-height: 1.42;
+    }
+    .jump-kicker {
+      margin-top: 9px;
+      color: var(--ink-muted);
+      font-family: var(--f-mono);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    @media (max-width: 1100px) { .jump-grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 820px) { .jump-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 560px) { .jump-grid { grid-template-columns: 1fr; } }
+
+    .frame-grid {
+      max-width: 980px;
+    }
+    .frame-notes {
+      display: grid;
+      gap: 14px;
+    }
+    .note {
+      display: grid;
+      grid-template-columns: 52px 1fr;
+      gap: 18px;
+      padding: 22px 24px;
+      border: 1px solid var(--rule);
+      border-radius: var(--radius);
+      background: var(--bg-card);
+      box-shadow: var(--shadow-soft);
+    }
+    .note-num {
+      color: var(--rust);
+      font-family: var(--f-display);
+      font-size: 28px;
+      font-weight: 900;
+      line-height: 1;
+    }
+    .note h3 {
+      margin-bottom: 7px;
+      font-size: 18px;
+      line-height: 1.25;
+    }
+    .note p { font-size: 15px; line-height: 1.55; }
+    .story-list {
+      display: grid;
+      gap: 24px;
+    }
+    .story {
+      border: 1px solid var(--rule);
+      border-radius: calc(var(--radius) + 6px);
+      background: color-mix(in srgb, var(--bg-card) 92%, transparent);
+      box-shadow: var(--shadow-soft);
+      overflow: clip;
+      scroll-margin-top: 92px;
+    }
+    .story[data-tone="rust"] { --tone: var(--rust); }
+    .story[data-tone="blue"] { --tone: var(--blue); }
+    .story[data-tone="cyan"] { --tone: var(--cyan); }
+    .story[data-tone="olive"] { --tone: var(--olive); }
+    .story[data-tone="plum"] { --tone: var(--plum); }
+    .story[data-tone="ochre"] { --tone: var(--ochre); }
+    .story-head {
+      display: grid;
+      grid-template-columns: minmax(104px, .16fr) minmax(0, 1fr) minmax(250px, .34fr);
+      gap: clamp(20px, 3vw, 42px);
+      align-items: start;
+      padding: clamp(24px, 4vw, 44px);
+      border-top: 5px solid var(--tone);
+    }
+    .story-head > div {
+      min-width: 0;
+    }
+    .story-aside {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .story-num {
+      color: var(--tone);
+      font-family: var(--f-display);
+      font-size: clamp(54px, 8vw, 104px);
+      font-weight: 950;
+      line-height: .84;
+    }
+    .story-tag {
+      color: var(--ink-muted);
+      font-family: var(--f-mono);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .16em;
+      line-height: 1.5;
+      text-transform: uppercase;
+    }
+    .story h3 {
+      max-width: 17ch;
+      font-size: clamp(32px, 5vw, 70px);
+      font-weight: 930;
+      line-height: .98;
+      text-transform: uppercase;
+    }
+    .story-summary {
+      max-width: 82ch;
+      margin-top: 18px;
+      color: var(--ink-soft);
+      font-size: clamp(17px, 1.5vw, 20px);
+      line-height: 1.55;
+    }
+    .story-visual {
+      align-self: start;
+    }
+    .story-visual img {
+      max-height: 285px;
+    }
+    .story-visual.is-contain img {
+      max-height: 285px;
+    }
+    .story-visual figcaption {
+      font-size: 12px;
+    }
+    details.story-detail {
+      border-top: 1px solid var(--rule);
+      background: var(--bg-card);
+    }
+    details.story-detail > summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      min-height: 58px;
+      padding: 16px clamp(24px, 4vw, 44px);
+      color: var(--ink);
+      cursor: pointer;
+      font-family: var(--f-mono);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .13em;
+      list-style: none;
+      text-transform: uppercase;
+    }
+    details.story-detail > summary::-webkit-details-marker { display: none; }
+    details.story-detail > summary::after {
+      content: "+";
+      display: grid;
+      place-items: center;
+      width: 32px;
+      height: 32px;
+      border: 1px solid var(--rule);
+      border-radius: 50%;
+      color: var(--tone);
+      font-family: var(--f-display);
+      font-size: 22px;
+      line-height: 1;
+      transition: transform .2s ease;
+    }
+    details.story-detail[open] > summary::after {
+      content: "−";
+      transform: rotate(180deg);
+    }
+    .story-body {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(270px, .32fr);
+      gap: clamp(24px, 4vw, 48px);
+      padding: 0 clamp(24px, 4vw, 44px) clamp(28px, 4vw, 48px);
+    }
+    .story-copy {
+      display: grid;
+      gap: 18px;
+      color: var(--ink-soft);
+      font-size: 17px;
+      line-height: 1.72;
+    }
+    .story-copy p strong { color: var(--ink); font-weight: 850; }
+    .story-copy h4 {
+      margin-top: 8px;
+      color: var(--tone);
+      font-family: var(--f-mono);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    .mini-list {
+      display: grid;
+      gap: 10px;
+      list-style: none;
+    }
+    .mini-list li {
+      position: relative;
+      padding-left: 22px;
+      color: var(--ink-soft);
+    }
+    .mini-list li::before {
+      content: "";
+      position: absolute;
+      top: .72em;
+      left: 0;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--tone);
+    }
+    .timeline {
+      display: grid;
+      gap: 12px;
+      margin: 5px 0 8px;
+      border-left: 2px solid var(--rule);
+      padding-left: 18px;
+    }
+    .timeline-item {
+      position: relative;
+      padding-bottom: 10px;
+    }
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      top: .45em;
+      left: -24px;
+      width: 10px;
+      height: 10px;
+      border: 2px solid var(--tone);
+      border-radius: 50%;
+      background: var(--bg-card);
+    }
+    .timeline-date {
+      color: var(--tone);
+      font-family: var(--f-mono);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .timeline-text {
+      margin-top: 4px;
+      color: var(--ink-soft);
+      font-size: 15.5px;
+      line-height: 1.55;
+    }
+    .side-stack {
+      display: grid;
+      gap: 14px;
+      align-content: start;
+    }
+    .source-card,
+    .quote-card,
+    .prompt-card {
+      border: 1px solid var(--rule);
+      border-radius: var(--radius);
+      background: var(--bg-raised);
+      box-shadow: var(--shadow-soft);
+      padding: 20px;
+    }
+    .source-card h4,
+    .quote-card h4,
+    .prompt-card h4 {
+      color: var(--tone);
+      font-family: var(--f-mono);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .14em;
+      line-height: 1.4;
+      text-transform: uppercase;
+    }
+    .source-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    details.source-card {
+      border-radius: var(--radius-sm);
+      background: color-mix(in srgb, var(--bg-raised) 82%, transparent);
+      box-shadow: none;
+      padding: 0;
+    }
+    .source-card summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 44px;
+      padding: 0 16px;
+      color: var(--tone);
+      cursor: pointer;
+      font-family: var(--f-mono);
+      font-size: 11px;
+      font-weight: 850;
+      letter-spacing: .14em;
+      line-height: 1.3;
+      list-style: none;
+      text-transform: uppercase;
+    }
+    .source-card summary::-webkit-details-marker {
+      display: none;
+    }
+    .source-card summary::after {
+      content: "+";
+      color: var(--ink-muted);
+      font-size: 16px;
+      line-height: 1;
+      transition: transform .18s ease;
+    }
+    .source-card[open] summary::after {
+      transform: rotate(45deg);
+    }
+    .source-card .source-list {
+      margin-top: 0;
+      padding: 0 16px 16px;
+    }
+    .source-list a {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 14px;
+      border-top: 1px solid var(--rule-soft);
+      padding-top: 10px;
+      color: var(--ink);
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.35;
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+    .source-list a::after {
+      content: "↗";
+      color: var(--tone);
+      font-family: var(--f-mono);
+      font-size: 12px;
+    }
+    .quote-card p {
+      margin-top: 12px;
+      color: var(--ink);
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+    .prompt-card code {
+      display: block;
+      margin-top: 12px;
+      border-left: 3px solid var(--tone);
+      padding: 12px 0 12px 14px;
+      color: var(--ink-soft);
+      font-family: var(--f-body);
+      font-size: 14.5px;
+      line-height: 1.55;
+      white-space: normal;
+    }
+    .image-card {
+      overflow: hidden;
+      border: 1px solid var(--rule);
+      border-radius: var(--radius);
+      background: var(--bg-raised);
+      box-shadow: var(--shadow-soft);
+      margin: 0;
+    }
+    .image-card a {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+    }
+    .image-card img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      background: #fff;
+      object-fit: cover;
+    }
+    .image-card.is-wide img {
+      aspect-ratio: 16 / 9;
+    }
+    .image-card.is-contain img {
+      aspect-ratio: auto;
+      max-height: 520px;
+      object-fit: contain;
+    }
+    .image-card figcaption {
+      border-top: 1px solid var(--rule-soft);
+      padding: 12px 14px 14px;
+      color: var(--ink-muted);
+      font-size: 12.5px;
+      line-height: 1.45;
+    }
+    .image-card figcaption a {
+      color: var(--tone);
+      font-weight: 800;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2px;
+    }
+    @media (max-width: 1180px) {
+      .story-head {
+        grid-template-columns: minmax(96px, .18fr) minmax(0, 1fr);
+      }
+      .story-visual {
+        grid-column: 2;
+        max-width: 560px;
+      }
+    }
+    @media (max-width: 920px) {
+      .story-head,
+      .story-body { grid-template-columns: 1fr; }
+      .story h3 { max-width: none; }
+      .story-visual {
+        grid-column: auto;
+        max-width: none;
+      }
+    }
+
+    .blitz-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .blitz-card {
+      min-height: 220px;
+      padding: 24px;
+      border: 1px solid var(--rule);
+      border-top: 4px solid var(--tone, var(--rust));
+      border-radius: var(--radius);
+      background: var(--bg-card);
+      box-shadow: var(--shadow-soft);
+      transition: transform .3s var(--ease), box-shadow .3s ease;
+    }
+    .blitz-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+    }
+    .blitz-card h3 {
+      margin-bottom: 12px;
+      color: var(--ink);
+      font-size: 20px;
+      line-height: 1.22;
+    }
+    .blitz-card p {
+      font-size: 15px;
+      line-height: 1.55;
+    }
+    .blitz-card a {
+      display: inline-flex;
+      margin-top: 18px;
+      color: var(--tone, var(--rust));
+      font-family: var(--f-mono);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    @media (max-width: 1000px) { .blitz-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 620px) { .blitz-grid { grid-template-columns: 1fr; } }
+
+    .finish {
+      border-top: 2px solid var(--ink);
+      padding-top: 28px;
+    }
+    .finish-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, .42fr);
+      gap: clamp(28px, 5vw, 72px);
+      align-items: start;
+    }
+    .finish h2 {
+      max-width: 11ch;
+      font-size: clamp(42px, 8vw, 112px);
+      font-weight: 950;
+      line-height: .92;
+      text-transform: uppercase;
+    }
+    .finish h2 em { color: var(--rust); font-style: normal; }
+    .finish p {
+      max-width: 72ch;
+      margin-top: 22px;
+      font-size: clamp(18px, 1.6vw, 22px);
+      line-height: 1.58;
+    }
+    .footer-card {
+      border: 1px solid var(--rule);
+      border-radius: var(--radius);
+      background: var(--ink);
+      color: #F6F4EA;
+      padding: 26px;
+      box-shadow: 0 18px 48px -20px rgba(39, 32, 68, .5);
+    }
+    .footer-card p,
+    .footer-card a { color: #F6F4EA; }
+    .footer-card .eyebrow { color: var(--rust); }
+    .footer-card .source-list a {
+      border-color: rgba(246,244,234,.18);
+    }
+    @media (max-width: 860px) { .finish-grid { grid-template-columns: 1fr; } }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity .7s ease, transform .7s var(--ease);
+    }
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal,
+      .jump-card,
+      .story,
+      .button,
+      .blitz-card { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="#top" aria-label="В начало">
+        <span class="nav-dot" aria-hidden="true"></span>
+        <span>Web3nity <em>/ июнь в AI</em></span>
+      </a>
+      <nav class="nav-list" aria-label="Навигация">
+        <a href="#frame">Коротко</a>
+        <a href="#stories">Истории</a>
+        <a href="#blitz">Блиц</a>
+        <a href="#useful">Полезное</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-topline">
+          <span class="eyebrow">AI digest / June 2026</span>
+        </div>
+        <div class="hero-grid">
+          <div>
+            <h1>Июнь в <em>AI</em></h1>
+            <p class="hero-lede">Главный вопрос месяца: как не остаться без доступа и не потерять свои наработки, если блокировки аккаунтов усиливаются, а самые мощные ИИ-модели начинают выдавать почти по паспорту. Fable 5 вернулся, но уже с урезанным лимитом и возможностями. GPT-5.6 (Конкурент Fable 5) показали в закрытом доступе; одновременно китайская GLM-5.2 поднялась в рейтинге создания сайтов и оказалась кратно дешевле американского лидера, Midjourney показала водный сканер здоровья, Claude Code помог прочитать древнюю письменность, здания учат ловить вирусы в воздухе, а гуманоидный робот добрался до вершины вулкана. Разбираем не просто новости июня, а тренды, которые за ними стоят.</p>
+            <div class="hero-actions">
+              <a class="button" href="#stories">Читать истории</a>
+              <a class="button secondary" href="#frame">Сначала коротко</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="jump-grid" aria-label="Быстрый переход к историям">
+          <a class="jump-card" href="#story-subsidy" style="--tone: var(--rust)">
+            <div class="jump-num">01</div>
+            <div class="jump-title">Компании платят за вас</div>
+            <p class="jump-desc">Подписка за $200 может давать ресурсов на тысячи долларов. Это окно возможностей, но оно не будет вечным.</p>
+            <div class="jump-kicker">деньги</div>
+          </a>
+          <a class="jump-card" href="#story-access" style="--tone: var(--plum)">
+            <div class="jump-num">02</div>
+            <div class="jump-title">Fable вернулся, но доступ уже не прежний</div>
+            <p class="jump-desc">Fable 5 возвращают: предыстория с экспортным запретом показывает, куда движется доступ к сильным моделям.</p>
+            <div class="jump-kicker">доступ</div>
+          </a>
+          <a class="jump-card" href="#story-china" style="--tone: var(--blue)">
+            <div class="jump-num">03</div>
+            <div class="jump-title">Китай уже не один DeepSeek</div>
+            <p class="jump-desc">GLM-5.2 поднялась в рейтингах создания сайтов, стоит кратно дешевле Fable 5 и показывает, что запасные варианты появляются быстрее, чем кажется.</p>
+            <div class="jump-kicker">модели</div>
+          </a>
+          <a class="jump-card" href="#story-medical" style="--tone: var(--cyan)">
+            <div class="jump-num">04</div>
+            <div class="jump-title">Midjourney теперь сканирует людей в воде</div>
+            <p class="jump-desc">Компания, которую все знают как генератор картинок, показала огромную ванну для ультразвукового сканирования всего тела.</p>
+            <div class="jump-kicker">здоровье</div>
+          </a>
+          <a class="jump-card" href="#story-buildings" style="--tone: var(--olive)">
+            <div class="jump-num">05</div>
+            <div class="jump-title">Здания, которые обнаруживают вирусы</div>
+            <p class="jump-desc">Офисы, школы и больницы хотят научить замечать вирусы в воздухе раньше, чем люди поймут, что заболели.</p>
+            <div class="jump-kicker">среда</div>
+          </a>
+          <a class="jump-card" href="#story-linear" style="--tone: var(--ochre)">
+            <div class="jump-num">06</div>
+            <div class="jump-title">Claude Code и древняя письменность</div>
+            <p class="jump-desc">Инженер с помощью Claude Code проверял гипотезы по письменности, которую больше ста лет не могли уверенно прочитать.</p>
+            <div class="jump-kicker">наука</div>
+          </a>
+          <a class="jump-card" href="#story-robot" style="--tone: var(--green)">
+            <div class="jump-num">07</div>
+            <div class="jump-title">Робот выходит из лаборатории</div>
+            <p class="jump-desc">Гуманоидный робот добрался до вершины вулкана высотой больше шести тысяч метров. </p>
+            <div class="jump-kicker">поле</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="frame">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="section-num">00</div>
+          <div>
+            <h2 class="section-title">Сначала <em>коротко</em></h2>
+            <p class="section-sub">Три быстрых вывода перед подробными историями.</p>
+          </div>
+        </div>
+        <div class="frame-grid">
+          <div class="frame-notes">
+            <article class="note reveal">
+              <div class="note-num">01</div>
+              <div>
+                <h3>Подписки сейчас выгоднее, чем кажутся</h3>
+                <p>SemiAnalysis прогнала AI-подписки на максимальных лимитах и сравнила полученный объём токенов с API-тарифами. По их оценке, Claude Max 20x за $200 может дать ресурсов примерно на $8 000, а ChatGPT Pro за те же $200 — до $14 000. Это не значит, что компании теряют ровно такие суммы на каждом пользователе, но показывает масштаб скидки. Они не будут вечными, так что пользуйтесь.</p>
+              </div>
+            </article>
+            <article class="note reveal">
+              <div class="note-num">02</div>
+              <div>
+                <h3>Fable вернулся, но уже с ограничениями</h3>
+                <p>Fable 5 сначала дали пользователям 9 июня, а уже 12 июня Anthropic сняла Fable и Mythos после экспортной директивы США. 30 июня ограничения отменили, и 1 июля Fable вернулся глобально в Claude Platform, Claude.ai, Claude Code и Claude Cowork. Но условия изменились: до 7 июля модель входит в Pro, Max, Team и часть Enterprise только в пределах до 50% недельного лимита, а дальше доступ будет через дополнительную оплату. Плюс Anthropic усилила фильтр безопасности для киберзапросов.</p>
+              </div>
+            </article>
+            <article class="note reveal">
+              <div class="note-num">03</div>
+              <div>
+                <h3>Работу лучше не завязывать на одну модель</h3>
+                <p>Главный практический вывод: не хранить всю работу только внутри одного чата или одного сервиса. Проекты, промпты, инструкции, принятые решения и хорошие примеры результата лучше держать в переносимом виде: локальная папка, репозиторий, база знаний или хотя бы один Markdown-файл передачи контекста. Если нужная модель пропадёт или станет слишком дорогой, вы сможете быстрее перейти на другую и не начнёте с нуля. (Покажу, как себя обезопасить).</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="stories">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="section-num">01</div>
+          <div>
+            <h2 class="section-title">Истории <em>месяца</em></h2>
+            <p class="section-sub">Каждая история сначала дана коротко, а потом раскрывается подробнее.</p>
+          </div>
+        </div>
+
+        <div class="story-list">
+          <article class="story reveal" id="story-subsidy" data-tone="rust">
+            <div class="story-head">
+              <aside class="story-aside">
+                <div class="story-num">01</div>
+                <div class="story-tag">деньги / подписки</div>
+              </aside>
+              <div>
+                <h3>Компании платят за вас</h3>
+                <p class="story-summary">Начнём с денег. Аналитики SemiAnalysis специально выжимали лимиты в подписках Anthropic и OpenAI, а потом считали, сколько тот же объём токенов стоил бы через API. Цифры поражают: Claude Max 20x за $200 может дать ресурсов примерно на $8 000, Claude Max за $100 — примерно на $2 000, подписка за $20 — примерно на $400, а ChatGPT Pro за $200 — до $14 000. То есть пользователь платит десятки или сотни долларов, а получает вычислений на сотни или тысячи.</p>
+              </div>
+            
+              <figure class="image-card story-visual is-contain">
+                    <a href="https://x.com/SemiAnalysis_/status/2064815044085318040" target="_blank" rel="noopener">
+                      <img src="assets/news-visuals/semianalysis-subscription-table.png" alt="Скриншот таблицы SemiAnalysis с API-эквивалентом AI-подписок" loading="lazy">
+                    </a>
+                    <figcaption>Оценка SemiAnalysis: сколько могла бы стоить активная AI-подписка при оплате через API.</figcaption>
+                  </figure>
+            </div>
+            <details class="story-detail">
+              <summary>Развернуть историю</summary>
+              <div class="story-body">
+                <div class="story-copy">
+                  <p>Двадцать, сто или двести долларов за AI-подписку выглядят дорого, пока не сравнить их с API. В стресс-тестах брали самые тяжёлые режимы, вырабатывали недельные лимиты и считали, сколько такой же объём токенов стоил бы разработчику.</p>
+                  <p>По этим оценкам, полностью выжатый Claude Max 20x за $200 может соответствовать примерно $8 000 API-использования, а ChatGPT Pro за те же $200 — примерно $14 000. То есть пользователь платит $200, а получает ресурс, который официально продаётся разработчикам за тысячи.</p>
+                  <p>Здесь важно правильно понять цифру. Это не значит, что Anthropic или OpenAI теряют на каждом активном пользователе ровно эту сумму: API-цена включает маржу, а большинство людей не доходит до потолка. Но масштаб всё равно показательный.</p>
+                  <h4>Почему компании на это идут</h4>
+                  <p>Потому что сейчас идёт борьба за привычку. Чтобы именно в ChatGPT находились ваши проекты. Чтобы Claude знал ваш стиль работы. Чтобы внутри Codex жили ваши автоматизации. Чтобы вы открывали один и тот же сервис каждый день и чтобы переезд становился всё болезненнее.</p>
+                  <p>Проще говоря, компании сейчас частично оплачивают наш доступ, чтобы мы привыкли работать именно внутри их сервисов. А для нас это большое окно возможностей: мы получаем технологии, которые ещё несколько лет назад могла позволить себе только крупная корпорация с собственными серверами и командой инженеров.</p>
+                  <p>Но такие условия вряд ли будут вечными. Постепенно появятся новые лимиты, отдельные дорогие режимы, доплаты за длинную работу агентов и разделение функций по типу доступа.</p>
+                </div>
+                <aside class="side-stack">
+                  
+                  <div class="quote-card">
+                    <h4>Вывод</h4>
+                    <p>Пробовать реализовать любые свои проекты сейчас выгодно. Но хранить весь рабочий контекст только внутри одного сервиса — риск.</p>
+                  </div>
+                  <details class="source-card source-collapsible">
+                    <summary>Источники</summary>
+                    <div class="source-list">
+                      <a href="https://x.com/SemiAnalysis_/status/2064815044085318040" target="_blank" rel="noopener">SemiAnalysis thread with table</a>
+                      <a href="https://www.techmeme.com/260611/p52" target="_blank" rel="noopener">Techmeme / SemiAnalysis summary</a>
+                      <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-costs-spike-as-subscriptions-hit-pricing-wall-firms-turn-towards-chinese-llms-open-source-models-to-extend-budget" target="_blank" rel="noopener">Tom&#39;s Hardware on subscription economics</a>
+                      <a href="https://gigazine.net/gsc_news/en/20260612-anthropic-openai-subscription-margin/" target="_blank" rel="noopener">GIGAZINE recap</a>
+                    </div>
+                  </details>
+                </aside>
+              </div>
+            </details>
+          </article>
+
+          <article class="story reveal" id="story-access" data-tone="plum">
+            <div class="story-head">
+              <aside class="story-aside">
+                <div class="story-num">02</div>
+                <div class="story-tag">доступ / геополитика</div>
+              </aside>
+              <div>
+                <h3>Fable вернулся, но доступ уже не прежний</h3>
+                <p class="story-summary">Апдейт на 1 июля: Fable 5 возвращают глобально, но уже с условиями. До 7 июля модель входит в Pro, Max, Team и часть Enterprise в пределах до 50% недельного лимита, а потом доступ будет идти через usage credits (Оплачивается дополнительно). Anthropic также добавила новый классификатор: если он считает запрос к Fable рискованным, пользователя уведомят, а запрос отправят в Opus 4.8. Это продолжение истории, которая началась 9 июня, когда самую сильную публичную модель Anthropic дали пользователям, а уже 12 июня закрыли после экспортной директивы США. И эта история очень много говорит о будущем. </p>
+              </div>
+            
+              <figure class="image-card story-visual is-contain">
+                    <a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank" rel="noopener">
+                      <img src="assets/news-visuals/anthropic-fable-benchmark.png" alt="Таблица Anthropic с бенчмарками Claude Fable 5 и Mythos 5" loading="lazy">
+                    </a>
+                    <figcaption>Fable и Mythos в сравнении с Opus, GPT-5.5 и Gemini.</figcaption>
+                  </figure>
+            </div>
+            <details class="story-detail" open>
+              <summary>Развернуть историю</summary>
+              <div class="story-body">
+                <div class="story-copy">
+                  <p>Начнём с сегодняшнего статуса. 30 июня Anthropic написала, что экспортные ограничения на Fable 5 и Mythos 5 сняты, и объявила возврат Fable на следующий день, 1 июля. С 1 июля Fable 5 снова доступен глобально в Claude Platform, Claude.ai, Claude Code и Claude Cowork. Но это уже не прежний свободный режим: до 7 июля для Pro, Max, Team и части Enterprise Fable включён только в пределах до 50% недельных лимитов, а дальше будет доступен через usage credits. То есть за эту модель нужно будет платить отдельно, и она достаточно дорогая.</p>
+                  <p>Вторая важная деталь — новый слой безопасности. Anthropic пишет, что использует safety classifiers — небольшие автоматические AI-системы, которые во время работы проверяют, не просит ли пользователь потенциально опасную киберзадачу. Проще говоря, между вами и Fable стоит модель-фильтр: она смотрит на запрос и решает, можно ли пропустить его дальше. Если всё нормально, Fable отвечает. Если фильтр считает запрос рискованным, Fable не отвечает: пользователя уведомляют, а сам запрос отправляют в Opus 4.8. Минус Anthropic тоже признаёт: из-за такого фильтра даже обычные задачи по коду и отладке могут чаще ошибочно попадать под ограничения.</p>
+                  <p>Теперь предыстория, потому что она говорит нам о многом.</p>
+                  <p>Здесь легко запутаться в названиях. Mythos-класс у Anthropic появился раньше: ещё в апреле компания открыла Claude Mythos Preview ограниченной группе киберзащитников и инфраструктурных партнёров в Project Glasswing. А 9 июня Anthropic сделала следующий шаг: выпустила Claude Fable 5 в широкий публичный доступ и одновременно дала участникам Mythos Preview апгрейд до Claude Mythos 5.</p>
+                  <p>Fable 5 была самой мощной моделью, которую компания на тот момент давала широкой аудитории: сильная в программировании, кибербезопасности и длинных агентских задачах. Mythos 5 оставался версией для проверенных специалистов по кибербезопасности.</p>
+                  <p>Fable часто называют усечённой версией Mythos, но точнее сказать так: это один базовый интеллект, один двигатель, только вокруг Fable стоит более строгая система безопасности. Mythos даёт проверенным участникам больше свободы в чувствительных киберзадачах.</p>
+                  <h4>Таймлайн</h4>
+                  <div class="timeline">
+                    <div class="timeline-item">
+                      <div class="timeline-date">9 июня</div>
+                      <div class="timeline-text">Anthropic открывает Fable 5 пользователям и даёт участникам Mythos Preview апгрейд до Mythos 5.</div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-date">12 июня</div>
+                      <div class="timeline-text">правительство США применяет экспортные ограничения к Fable 5 и Mythos 5. По формулировке Anthropic, доступ нужно было ограничить для иностранных граждан, в том числе находящихся внутри США. Компания не могла быстро и надёжно проверить гражданство всех пользователей, поэтому закрыла обе модели для всех.</div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-date">26 июня</div>
+                      <div class="timeline-text">Mythos 5 начинают возвращать части одобренных американских организаций. В тот же день OpenAI показывает GPT-5.6 Sol, Terra и Luna не в ChatGPT, а в ограниченном доступе для одобренных участников.</div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-date">30 июня</div>
+                      <div class="timeline-text">Anthropic сообщает, что экспортные ограничения сняты, и объявляет, что Fable 5 начнут возвращать пользователям 1 июля.</div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-date">1 июля</div>
+                      <div class="timeline-text">Fable 5 возвращается глобально, но до 7 июля только в пределах ограниченной доли недельного лимита для подписчиков и с более серьёзной системой безопасности.</div>
+                    </div>
+                  </div>
+                  <p>Почему вообще появился такой приказ? По описанию Anthropic, поводом стал отчёт исследователей Amazon: они нашли способ обойти часть защитных механизмов Fable и заставить модель помочь с поиском уязвимостей, а в одном случае — с демонстрацией эксплуатации. Anthropic спорит с масштабом угрозы: компания пишет, что похожие результаты могли давать и другие публичные модели, а обнаруженное поведение не открывало уникальных Mythos-возможностей. Но приказ был немедленным, и доступ всё равно закрыли.</p>
+                  <p>Именно поэтому эта история важна не только для специалистов по кибербезопасности. Самая сильная публичная модель Anthropic прожила в открытом доступе примерно три дня, исчезла по решению государства, а вернулась уже с лимитами, платным продолжением и более жёсткой маршрутизацией запросов.</p>
+                  <h4>Что это значит для нас</h4>
+                  <p>Вывод не в том, что завтра Claude попросит у всех паспорт. Официального входа “по американскому паспорту” для обычных пользователей нет. Но доступ к самым сильным моделям постепенно сужается. И история с Fable показала главное: модель, на которую люди уже начали переносить задачи и проекты, могут закрыть в любой момент — просто потому что изменились правила, регуляторная позиция или внутренние ограничения компании.</p>
+                  <p>Поэтому не стоит строить всю работу вокруг одной конкретной нейросети. Нужны гибкие системы.</p>
+                  <p>В этом месяце я выпускала видео про командный пункт в Codex. Смысл там как раз в этом: все проекты, наработки, задачи, правила и файлы лежат локально в папке у вас на компьютере, а ИИ работает с ними как с вашей системой. Если завтра Codex исчезнет или станет недоступен, эту же папку можно открыть в Claude Code, Gemini, Kimi или другом агенте и продолжить.</p>
+                  <p>Да, придётся заново подключить MCP-серверы, дать доступы к нужным приложениям, проверить разрешения и адаптировать инструкции. Но вы не начинаете с нуля. Ваша система принадлежит вам.</p>
+                </div>
+                <aside class="side-stack">
+                  
+                  <div class="prompt-card">
+                    <h4>Мини-шаг чтобы себя обезопасить</h4>
+                    <p>Если такой системы пока нет, сделайте хотя бы один файл передачи контекста. Можно попросить свою основную нейросеть так:</p>
+                    <code>Собери документ передачи контекста для работы с другой ИИ-моделью. Включи мои цели, мою роль, активные проекты, принятые решения, предпочтительный стиль, рабочие правила, повторяющиеся процессы, важный контекст, шаблоны хорошего результата и список того, чего делать не нужно. Отдельно перечисли подключённые инструменты и то, что потребуется настроить заново. Не включай пароли, токены, персональные данные и другую чувствительную информацию. Сохрани документ в формате Markdown.</code>
+                    <p>Сохраните этот файл у себя и периодически обновляйте. Не идеально, но намного лучше, чем потерять контекст вместе с доступом к одной модели.</p>
+                  </div>
+                  <details class="source-card source-collapsible">
+                    <summary>Источники</summary>
+                    <div class="source-list">
+                      <a href="https://www.anthropic.com/news/redeploying-fable-5" target="_blank" rel="noopener">Anthropic: Redeploying Fable 5</a>
+                      <a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank" rel="noopener">Anthropic: Fable 5 and Mythos 5</a>
+                      <a href="https://www.anthropic.com/news/fable-mythos-access" target="_blank" rel="noopener">Anthropic statement on access</a>
+                      <a href="https://www.semafor.com/article/06/27/2026/us-releases-powerful-anthropic-model-mythos-to-some-us-companies" target="_blank" rel="noopener">Semafor: Mythos for select groups</a>
+                      <a href="https://aws.amazon.com/blogs/aws/anthropic-claude-fable-5-on-aws-mythos-class-capabilities-with-built-in-safeguards-now-available/" target="_blank" rel="noopener">AWS update on Bedrock access</a>
+                      <a href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank" rel="noopener">OpenAI: GPT-5.6 Sol preview</a>
+                      <a href="https://help.openai.com/en/articles/20001325-a-preview-of-gpt-56-sol-terra-and-luna" target="_blank" rel="noopener">OpenAI Help Center: preview access</a>
+                      <a href="https://deploymentsafety.openai.com/gpt-5-6-preview" target="_blank" rel="noopener">GPT-5.6 Preview System Card</a>
+                    </div>
+                  </details>
+                </aside>
+              </div>
+            </details>
+          </article>
+
+          <article class="story reveal" id="story-china" data-tone="blue">
+            <div class="story-head">
+              <aside class="story-aside">
+                <div class="story-num">03</div>
+                <div class="story-tag">модели / Китай</div>
+              </aside>
+              <div>
+                <h3>Китай это уже не один DeepSeek</h3>
+                <p class="story-summary">Американские компании больше не единственный источник мощных нейросетей. В июне Z.ai выпустила GLM-5.2: модель поднялась на второе место в рейтинге Arena по созданию сайтов и интерфейсов, выше Claude Opus 4.8 Thinking и сразу за Fable 5. При этом она стоит кратно дешевле американского лидера и доступна с открытыми весами. Параллельно Kimi развивает Goal Mode — режим, где агенту задают цель, к которой он должен прийти, и он не остановится, пока до нее не доберется. </p>
+              </div>
+            
+              <figure class="image-card story-visual is-wide">
+                    <a href="https://www.linkedin.com/posts/design-arena-ai_glm-52-by-zai-ranks-1st-overall-on-design-activity-7473815932411486208-Wrk9" target="_blank" rel="noopener">
+                      <img src="assets/news-visuals/glm-design-arena.jpg" alt="Скриншот карточки Design Arena о GLM-5.2" loading="lazy">
+                    </a>
+                    <figcaption>GLM-5.2 выходит на первое место в рейтинге Design Arena по созданию сайтов.</figcaption>
+                  </figure>
+            </div>
+            <details class="story-detail">
+              <summary>Развернуть историю</summary>
+              <div class="story-body">
+                <div class="story-copy">
+                  <p>Есть и хорошая новость: американские компании больше не единственный источник мощных нейросетей.</p>
+                  <p>Когда говорят про китайский AI, многие до сих пор вспоминают только DeepSeek. Но за последний год в Китае появилось сразу несколько сильных лабораторий, и одна из самых интересных сейчас — Z.ai.</p>
+                  <p>В июне они выпустили GLM-5.2. Модель поднялась на второе место в рейтинге Arena по созданию сайтов и интерфейсов: выше неё была только Fable 5, ниже — Claude Opus 4.8 Thinking. Неплохая заявка на лидерство.</p>
+                  <p>Это не значит, что GLM-5.2 является второй или третьей по силе нейросетью вообще. Рейтинги измеряют конкретные задачи: создание веб-интерфейсов, работу с кодом, отдельные бенчмарки по интеллекту. В реальных рабочих процессах модель может проявить себя по-разному. Но радует то, что достойные альтернативы уже появляются.</p>
+                  <p>Важная практическая деталь: модель open-weight. Её можно запускать через разных провайдеров или разворачивать внутри собственной инфраструктуры, если она у вас есть.</p>
+                  <h4>Что отсюда следует</h4>
+                  <p>Главный вопрос теперь такой: сколько потребуется Китаю, чтобы догнать самые сильные американские модели по всем задачам? Илон Маск предположил, что модель уровня Fable появится в Китае к первому кварталу 2027 года. Основатель Z.ai ответил, что столько ждать не придётся. Это, конечно, прогнозы заинтересованных людей, а не точная дата. Но даже специалисты по кибербезопасности уже пишут, что лучшие китайские open-weight модели могут отставать от американского фронтира не на годы, а на месяцы.</p>
+                  <p>Так что в эту сторону стоит смотреть. Если доступ к американским моделям сужается, китайские сервисы становятся не экзотикой, а рабочим запасным вариантом.</p>
+                  <p>Отдельно можно присмотреться к Kimi. Это такой китайский аналог Claude: много функций, много агентских режимов, есть рой агентов, а недавно появился Goal Mode — режим цели. Вы не просто даёте агенту одно задание, а задаёте конечный результат: изучи рынок, собери конкурентов, сделай таблицу, подготовь выводы и не заканчивай, пока не будет готов полный отчёт. После этого Kimi планирует шаги, показывает промежуточные результаты и продолжает работу до результата. По сути, это китайский ответ на длинные агентские режимы Codex и Claude Code.</p>
+                </div>
+                <aside class="side-stack">
+                  
+                  <div class="quote-card">
+                    <h4>Оговорка</h4>
+                    <p>Лидерство в web-design бенчмарке не равно общему превосходству во всех задачах. Но как сигнал о темпе Китая это очень сильная история.</p>
+                  </div>
+                  <details class="source-card source-collapsible">
+                    <summary>Источники</summary>
+                    <div class="source-list">
+                      <a href="https://z.ai/blog/glm-5.2" target="_blank" rel="noopener">Z.ai: GLM-5.2</a>
+                      <a href="https://x.com/Designarena/article/2068030598028087788" target="_blank" rel="noopener">Design Arena analysis</a>
+                      <a href="https://www.linkedin.com/posts/design-arena-ai_glm-52-by-zai-ranks-1st-overall-on-design-activity-7473815932411486208-Wrk9" target="_blank" rel="noopener">Design Arena LinkedIn post</a>
+                      <a href="https://www.techradar.com/pro/chinas-answer-to-claudes-fable-5-comes-top-of-the-html-web-design-contest-as-the-ceo-tells-elon-musk-glm-will-reach-mythos-class-before-q1-2027" target="_blank" rel="noopener">TechRadar on GLM-5.2</a>
+                      <a href="https://www.kimi.com/resources/kimi-work-introduction" target="_blank" rel="noopener">Kimi Work / Goal Mode</a>
+                    </div>
+                  </details>
+                </aside>
+              </div>
+            </details>
+          </article>
+
+          <article class="story reveal" id="story-medical" data-tone="cyan">
+            <div class="story-head">
+              <aside class="story-aside">
+                <div class="story-num">04</div>
+                <div class="story-tag">здоровье / hardware</div>
+              </aside>
+              <div>
+                <h3>Midjourney теперь сканирует людей в воде</h3>
+                <p class="story-summary">Midjourney, которую все знают как генератор картинок, неожиданно показала медицинское устройство. Выглядит оно как огромная футуристическая ванна: человек погружается в воду, вокруг тела работают ультразвуковые датчики, а система должна собрать трёхмерную карту организма примерно за минуту. Первый центр компания планирует открыть в Сан-Франциско к концу 2027 года. Пока это не замена МРТ и не доказанный медицинский продукт, а скорее заявка на wellness-сканирование.</p>
+              </div>
+            
+              <figure class="image-card story-visual is-wide">
+                    <a href="https://www.midjourney.com/medical" target="_blank" rel="noopener">
+                      <img src="assets/news-visuals/midjourney-official-scanner.jpg" alt="Визуал Midjourney Scanner с кольцом ультразвуковых датчиков" loading="lazy">
+                    </a>
+                    <figcaption><a href="https://www.midjourney.com/medical" target="_blank" rel="noopener">Ролик Midjourney Medical</a> можно открыть на странице проекта.</figcaption>
+                  </figure>
+            </div>
+            <details class="story-detail">
+              <summary>Развернуть историю</summary>
+              <div class="story-body">
+                <div class="story-copy">
+                  <p>Теперь от политики, ограничений и бенчмарков — к самым необычным историям месяца.</p>
+                  <p>Начнём с Midjourney. Компания, которую все знают как генератор картинок, неожиданно показала не модель, не видео и не очередной стиль, а медицинское устройство.</p>
+                  <p>Выглядит оно как огромная футуристическая ванна. Человек погружается в воду, вокруг тела расположены десятки модулей с ультразвуковыми датчиками, они отправляют звуковые волны и собирают большой объём данных.</p>
+                  <p>Зачем вода? Потому что воздух мешает ультразвуку. В обычном кабинете врач наносит на кожу гель, чтобы между датчиком и телом не было воздушной прослойки. Здесь эту задачу решает вода: она окружает тело со всех сторон и позволяет сканировать большую область одновременно.</p>
+                  <p>Само сканирование должно занимать около минуты. Затем система обрабатывает данные и собирает трёхмерную карту тела. Первый медицинский центр Midjourney хочет открыть в Сан-Франциско к концу 2027 года.</p>
+                  <h4>Где важная оговорка</h4>
+                  <p>Пока это прототип и планы компании. Система не является доказанной заменой МРТ, КТ или полноценному обследованию. На первом этапе её хотят позиционировать скорее как wellness-сканирование — способ регулярно наблюдать изменения в организме.</p>
+                  <p>После этого анонса уже не так удивительно звучит шутка, что следующим продуктом Midjourney станет йога-школа.</p>
+                </div>
+                <aside class="side-stack">
+                  
+
+                  <details class="source-card source-collapsible">
+                    <summary>Источники</summary>
+                    <div class="source-list">
+                      <a href="https://www.midjourney.com/medical" target="_blank" rel="noopener">Midjourney Medical</a>
+                      <a href="https://www.midjourney.com/medical/blogpost" target="_blank" rel="noopener">Midjourney: A New Era</a>
+                      <a href="https://www.midjourney.com/medical/scan_gallery" target="_blank" rel="noopener">Midjourney Medical: Scan Gallery</a>
+                      <a href="https://x.com/midjourney/status/2067421950314688759" target="_blank" rel="noopener">Midjourney X announcement</a>
+                      <a href="https://x.com/midjourney/status/2067422898407837797" target="_blank" rel="noopener">Midjourney Scanner technical thread</a>
+                      <a href="https://www.theverge.com/report/954826/midjourney-medical-ai-ultrasound-body-scanner-lacks-evidence" target="_blank" rel="noopener">The Verge reality check</a>
+                      <a href="https://radiologybusiness.com/topics/healthcare-management/healthcare-economics/ai-lab-midjourney-investing-over-74m-launch-whole-body-ultrasound-screening-business" target="_blank" rel="noopener">Radiology Business</a>
+                    </div>
+                  </details>
+                </aside>
+              </div>
+            </details>
+          </article>
+
+          <article class="story reveal" id="story-buildings" data-tone="olive">
+            <div class="story-head">
+              <aside class="story-aside">
+                <div class="story-num">05</div>
+                <div class="story-tag">здания / биосенсоры</div>
+              </aside>
+              <div>
+                <h3>Здания, которые замечают вирусы</h3>
+                <p class="story-summary">Американские инженеры и медики хотят научить здания обнаруживать опасные частицы в воздухе почти в реальном времени. Сенсоры будут искать вирусы, бактерии, грибки и аллергены, а система сможет усилить вентиляцию, включить фильтрацию или обеззараживание до того, как инфекция разойдётся по школе, больнице или детскому саду. Это как пожарная сигнализация, только вместо дыма — опасные вирусы и патогены. </p>
+              </div>
+            
+              <figure class="image-card story-visual is-wide">
+                    <a href="https://source.washu.edu/2025/10/disrupting-infectious-diseasesas/" target="_blank" rel="noopener">
+                      <img src="assets/news-visuals/washu-bioaerosol.jpg" alt="Иллюстрация WashU к программе биосенсоров для воздуха в зданиях" loading="lazy">
+                    </a>
+                    <figcaption>Программа WashU по биосенсорам для воздуха в зданиях.</figcaption>
+                  </figure>
+            </div>
+            <details class="story-detail">
+              <summary>Развернуть историю</summary>
+              <div class="story-body">
+                <div class="story-copy">
+                  <p>Следующая история выглядит менее зрелищно, чем роботы и новые модели, но потенциально она очень практичная.</p>
+                  <p>Американские инженеры и медики собираются научить здания обнаруживать опасные частицы в воздухе почти в реальном времени и автоматически реагировать до того, как инфекция распространится.</p>
+                  <p>Работать это должно примерно так. Специальные датчики постоянно забирают образцы воздуха и ищут в них вирусы, бактерии, грибки и аллергены. Затем система оценивает риск. Если обнаруживается опасность, здание само усиливает вентиляцию, включает дополнительную фильтрацию или запускает обеззараживание воздуха.</p>
+                  <p>Представьте школу. Один ребёнок приходит с гриппом. Он ещё сам не понимает, что заболел, симптомов нет. Но система уже видит опасный сигнал в воздухе, усиливает вентиляцию в конкретной зоне и предупреждает администрацию. Потенциально это не даёт одной инфекции превратиться во вспышку на всю школу.</p>
+                  <p>Это пока не массовый готовый продукт, а исследовательская программа. Прототипы планируют испытывать в школах, больницах и детских садах, а работающие системы хотят показать примерно к 2028 году. Но направление сильное: AI и сенсоры начинают управлять средой вокруг нас.</p>
+                </div>
+                <aside class="side-stack">
+                  
+
+                  <details class="source-card source-collapsible">
+                    <summary>Источники</summary>
+                    <div class="source-list">
+                      <a href="https://source.washu.edu/2025/10/disrupting-infectious-diseasesas/" target="_blank" rel="noopener">WashU Source visual story</a>
+                      <a href="https://engineering.washu.edu/news/2025/WashU-to-lead-bioaerosol-sensor-development-on-up-to-40-million-federal-contract-to-revolutionize-clean-indoor-air.html" target="_blank" rel="noopener">WashU bioaerosol sensor program</a>
+                      <a href="https://breathe2026.org/brave/" target="_blank" rel="noopener">BREATHE / BRAVE program</a>
+                    </div>
+                  </details>
+                </aside>
+              </div>
+            </details>
+          </article>
+
+          <article class="story reveal" id="story-linear" data-tone="ochre">
+            <div class="story-head">
+              <aside class="story-aside">
+                <div class="story-num">06</div>
+                <div class="story-tag">Claude Code / наука</div>
+              </aside>
+              <div>
+                <h3>Claude Code и древняя письменность</h3>
+                <p class="story-summary">Американский инженер-самоучка Том Ди Мино заявил, что продвинулся в расшифровке минойской письменности Linear A, которую больше ста лет не могли уверенно прочитать. </p>
+              </div>
+            
+              <figure class="image-card story-visual is-contain">
+                    <a href="https://commons.wikimedia.org/wiki/File:Linear_A_cup.png" target="_blank" rel="noopener">
+                      <img src="assets/news-visuals/linear-a-cup.png" alt="Пример знаков Linear A на чаше из Scripta Minoa" loading="lazy">
+                    </a>
+                    <figcaption>Пример письменности Linear A из Scripta Minoa.</figcaption>
+                  </figure>
+            </div>
+            <details class="story-detail">
+              <summary>Развернуть историю</summary>
+              <div class="story-body">
+                <div class="story-copy">
+                  <p>Американский инженер-самоучка Том Ди Мино заявил, что ему удалось продвинуться в расшифровке Linear A — письменности минойской цивилизации, которую использовали на Крите примерно за две тысячи лет до нашей эры. Археологи нашли тысячи знаков на глиняных табличках, сосудах и религиозных предметах, но больше ста лет никто не мог уверенно понять, на каком языке написаны эти тексты и что они означают.</p>
+                  <p>Ди Мино предполагает, что за Linear A стоял вымерший семитский язык, очень далёкий родственник иврита, аккадского и финикийского. Ключевой зацепкой для него стало слово, которое он читает как <code>nawaya</code> — “обитать”, “пребывать” или “поселяться”. Похожий корень есть в нескольких древних семитских языках, и он встретился в молитвенных надписях из пяти разных святилищ Крита.</p>
+                  <p>По версии Ди Мино, часть надписей могла означать просьбу к богине поселиться или пребывать в святилище. В итоге он заявляет о расшифровке сорока знаков, включая тринадцать ранее неизвестных.</p>
+                  <p>Как он это сделал? Он сам сформулировал гипотезы, а Claude Code помог ему написать Python-скрипты для работы с корпусом надписей: искать повторяющиеся конструкции, сравнивать знаки, проверять, где встречается конкретная последовательность, сопоставлять тексты из разных археологических памятников. То, что вручную заняло бы месяцы или годы, можно было прогнать по базе данных гораздо быстрее.</p>
+                  <p>Заявления о расшифровке древних письменностей требуют долгой проверки. Сейчас результаты должны оценить другие лингвисты и специалисты.</p>
+                  <p>Ждем, ждем.</p>
+                </div>
+                <aside class="side-stack">
+                  
+
+                  <details class="source-card source-collapsible">
+                    <summary>Источники</summary>
+                    <div class="source-list">
+                      <a href="https://www.minoanmystery.org/" target="_blank" rel="noopener">Minoan Mystery</a>
+                      <a href="https://aiinsiders.net/article/an-ai-engineer-says-he-decoded-linear-a-here-is-what-he" target="_blank" rel="noopener">AI Insiders report</a>
+                      <a href="https://commons.wikimedia.org/wiki/File:Linear_A_cup.png" target="_blank" rel="noopener">Wikimedia Commons: Linear A cup</a>
+                      <a href="https://news.ycombinator.com/item?id=48600107" target="_blank" rel="noopener">Hacker News discussion</a>
+                      <a href="https://www.linkedin.com/posts/tomdimino_without-too-much-ballyhoo-im-honored-and-activity-7471395019157835776-ETxU" target="_blank" rel="noopener">Tom di Mino announcement</a>
+                    </div>
+                  </details>
+                </aside>
+              </div>
+            </details>
+          </article>
+
+          <article class="story reveal" id="story-robot" data-tone="green">
+            <div class="story-head">
+              <aside class="story-aside">
+                <div class="story-num">07</div>
+                <div class="story-tag">роботы / полевая проверка</div>
+              </aside>
+              <div>
+                <h3>Робот на вершине вулкана</h3>
+                <p class="story-summary">Модифицированный гуманоид Unitree G1 по имени Pemba добрался до вершины вулкана Чимборасо в Эквадоре. Высота — примерно 6 200 метров. Робот не прошёл весь путь сам: на крутых и технически сложных участках его переносила команда. Но даже с этой оговоркой это важный полевой тест: холод, снег, камни, разреженный воздух и батареи, которые на такой высоте садятся быстрее.</p>
+              </div>
+            
+              <figure class="image-card story-visual is-wide">
+                    <a href="https://www.climbing.com/news/robot-everest-chimborazo/" target="_blank" rel="noopener">
+                      <img src="assets/news-visuals/robot-chimborazo-roped.jpg" alt="Pemba на маршруте вулкана Чимборасо с командой" loading="lazy">
+                    </a>
+                    <figcaption>Pemba на маршруте вулкана Чимборасо в Эквадоре.</figcaption>
+                  </figure>
+            </div>
+            <details class="story-detail">
+              <summary>Развернуть историю</summary>
+              <div class="story-body">
+                <div class="story-copy">
+                  <p>И ещё немного робототехники.</p>
+                  <p>Модифицированный гуманоид Unitree G1 по имени Pemba добрался до вершины вулкана Чимборасо в Эквадоре. Высота — примерно 6 200 метров. Подъём занял около 16 часов. Робот двигался по снегу, камням и очень разреженному воздуху. На участках с уклоном меньше 30 градусов он мог идти самостоятельно, а на более крутых и технически сложных отрезках его переносила команда.</p>
+                  <p>Это важно сказать, чтобы не создавалось впечатление, будто робот в одиночку покорил вулкан от подножия до вершины.</p>
+                  <p>Но даже с этой оговоркой результат впечатляющий. На высоте больше шести тысяч метров холодно, аккумуляторы быстрее разряжаются, механика работает в тяжёлых условиях, а поверхность постоянно меняется. Поэтому это не столько спортивный рекорд, сколько тест выносливости.</p>
+                  <p>Смысл таких испытаний в том, чтобы роботы потом работали там, где человеку опасно: на местах аварий, в горах, в шахтах, в зонах пожаров, во время спасательных операций. Создатели Pemba уже обсуждают возможность отправить робота в район Эвереста.</p>
+                </div>
+                <aside class="side-stack">
+                  
+
+                  <details class="source-card source-collapsible">
+                    <summary>Источники</summary>
+                    <div class="source-list">
+                      <a href="https://www.climbing.com/news/robot-everest-chimborazo/" target="_blank" rel="noopener">Climbing: Pemba on Chimborazo</a>
+                      <a href="https://explorersweb.com/pemba-a-climbing-robot-summits-chimborazo-and-wants-to-go-to-everest/" target="_blank" rel="noopener">ExplorersWeb on Pemba</a>
+                      <a href="https://interestingengineering.com/ai-robotics/humanoid-robot-summits-20341-foot-volcano" target="_blank" rel="noopener">Interesting Engineering</a>
+                      <a href="https://robotsbeat.com/unitree-g1-pemba-robot-chimborazo-summit-everest-geologic-dome/" target="_blank" rel="noopener">RobotsBeat report</a>
+                    </div>
+                  </details>
+                </aside>
+              </div>
+            </details>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="blitz">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="section-num">02</div>
+          <div>
+            <h2 class="section-title">Блиц <em>коротко</em></h2>
+            <p class="section-sub">А теперь коротко, блицем: новости, которые не тянут на большой разворот, но хорошо показывают, куда движется рынок.</p>
+          </div>
+        </div>
+        <div class="blitz-grid">
+          <article class="blitz-card reveal" style="--tone: var(--ochre)">
+            <h3>Илон Маск стал первым триллионером — и SpaceX покупает Cursor</h3>
+            <p>После исторического выхода SpaceX на биржу состояние Илона Маска на короткое время превысило $1 трлн. Затем акции просели, и он снова опустился ниже этой отметки, но сам факт показательный: AI, космос и инфраструктура всё сильнее сходятся в одну историю.</p>
+            <p>Отдельно SpaceX договорилась о покупке Cursor за $60 млрд. Похоже, Маск всё ещё собирается бороться за лидерство в AI, в том числе через инструменты для программирования.</p>
+            <a href="https://www.theguardian.com/technology/2026/jun/24/elon-musk-trillionaire-spacex" target="_blank" rel="noopener">The Guardian</a>
+            <a href="https://www.businessinsider.com/grok-4-5-starship-starlink-engineers-elon-musk-ai-cursor-2026-6" target="_blank" rel="noopener">Business Insider</a>
+          </article>
+          <article class="blitz-card reveal" style="--tone: var(--blue)">
+            <h3>ChatGPT пересёк 1 млрд MAU</h3>
+            <p>По оценке Sensor Tower, ChatGPT стал самым быстрым мобильным приложением, достигшим миллиарда месячных активных пользователей. Это оценка третьей стороны, не официальная метрика OpenAI.</p>
+            <a href="https://www.prnewswire.com/news-releases/sensor-tower-state-of-ai-2026-report-global-time-spent-on-generative-ai-apps-projected-to-more-than-double-year-over-year-302800975.html" target="_blank" rel="noopener">Источник</a>
+          </article>
+          <article class="blitz-card reveal" style="--tone: var(--plum)">
+            <h3>Claude Tag заходит в Slack</h3>
+            <p>Claude можно тегнуть в Slack-канале как участника команды: поручить задачу, дать контекст обсуждения, подключить инструменты, данные и кодовую базу. Андрей Карпати назвал это новым способом взаимодействия с AI. Смысл простой: AI становится не отдельным чатом, а участником рабочего процесса.</p>
+            <a href="https://www.anthropic.com/news/introducing-claude-tag" target="_blank" rel="noopener">Anthropic</a>
+          </article>
+          <article class="blitz-card reveal" style="--tone: var(--olive)">
+            <h3>Copilot Cowork стал доступен</h3>
+            <p>Microsoft сделала Copilot Cowork доступным пользователям Microsoft 365. Это агент для многоэтапной работы с документами, таблицами, презентациями и корпоративными данными. Microsoft утверждает, что во внутренних тестах часть задач обходилась на 30-40% дешевле, чем в Claude Cowork, но это оценка самой компании, и реальная стоимость будет зависеть от сценария.</p>
+            <a href="https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/16/copilot-cowork-is-now-generally-available/" target="_blank" rel="noopener">Microsoft</a>
+          </article>
+          <article class="blitz-card reveal" style="--tone: var(--rust)">
+            <h3>OpenRouter запустил Fusion</h3>
+            <p>OpenRouter запустил Fusion: один запрос отправляется нескольким моделям, система сравнивает ответы, ищет противоречия и собирает общую версию. В тесте на deep research такая связка показала результат выше Fable 5, но только в конкретном бенчмарке. Сама идея очень правильная: вместо слепого доверия одной модели — конкуренция моделей. Одна предложила ответ, вторая раскритиковала, третья помогла собрать итог.</p>
+            <a href="https://openrouter.ai/blog/announcements/fusion-beats-frontier/" target="_blank" rel="noopener">OpenRouter</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="useful">
+      <div class="wrap finish">
+        <div class="finish-grid">
+          <div class="reveal">
+            <span class="eyebrow">полезняшка месяца</span>
+            <h2>In the <em>Weights</em></h2>
+            <p>В конце — обещанная полезняшка. В сети вирусится забавный проект In the Weights: он позволяет проверить, насколько хорошо разные языковые модели знают вас, вашу компанию, проект или публичный псевдоним.</p>
+            <p>Вводите имя, сервис спрашивает сразу несколько нейросетей, что им известно об этом человеке или проекте, сравнивает ответы и показывает условную силу узнавания. Можно посмотреть, знает ли вас ChatGPT, знает ли Claude, знает ли Gemini и насколько согласованно модели вообще понимают, кто вы такой.</p>
+            <p>Сразу оговорка: модель может перепутать вас с однофамильцем, поэтому это скорее развлечение и vanity search, чем строгая метрика. Но идея полезная: публичность начинает измеряться не только поиском Google, но и тем, что уже “запомнили” модели.</p>
+            <div class="hero-actions">
+              <a class="button" href="https://intheweights.com/" target="_blank" rel="noopener">Открыть сервис</a>
+              <a class="button secondary" href="https://news.ycombinator.com/item?id=48591348" target="_blank" rel="noopener">Обсуждение на HN</a>
+            </div>
+          </div>
+          <aside class="footer-card reveal">
+            <span class="eyebrow">Web3nity</span>
+            <p style="margin-top: 12px;">Больше разборов про AI — на YouTube-канале и в Telegram Web3nity.</p>
+            <div class="source-list">
+              <a href="https://www.youtube.com/@Web3nity" target="_blank" rel="noopener">YouTube Web3nity</a>
+              <a href="https://t.me/web3nity_channel" target="_blank" rel="noopener">Telegram Web3nity</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    (function () {
+      var revealItems = Array.prototype.slice.call(document.querySelectorAll('.reveal'));
+      if ('IntersectionObserver' in window) {
+        var revealObserver = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+        revealItems.forEach(function (item) { revealObserver.observe(item); });
+      } else {
+        revealItems.forEach(function (item) { item.classList.add('is-visible'); });
+      }
+
+      var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav-list a'));
+      var sections = navLinks
+        .map(function (link) { return document.querySelector(link.getAttribute('href')); })
+        .filter(Boolean);
+      if ('IntersectionObserver' in window && sections.length) {
+        var activeObserver = new IntersectionObserver(function (entries) {
+          var visible = entries
+            .filter(function (entry) { return entry.isIntersecting; })
+            .sort(function (a, b) { return b.intersectionRatio - a.intersectionRatio; })[0];
+          if (!visible) return;
+          navLinks.forEach(function (link) {
+            link.classList.toggle('is-active', link.getAttribute('href') === '#' + visible.target.id);
+          });
+        }, { threshold: [0.2, 0.45, 0.7] });
+        sections.forEach(function (section) { activeObserver.observe(section); });
+      }
+    })();
+  </script>
+</body>
+</html>
